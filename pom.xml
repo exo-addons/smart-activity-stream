@@ -19,8 +19,7 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>addons-parent-pom</artifactId>
@@ -30,7 +29,7 @@
 
   <groupId>org.exoplatform.addons.smart-activity-stream</groupId>
   <artifactId>smart-activity-stream</artifactId>
-  <version>1.0.x-SNAPSHOT</version>
+  <version>1.0.0-M08</version>
   <packaging>pom</packaging>
   <name>eXo Smart Activity Stream</name>
   <description>eXo Smart Activity Stream portal extension</description>
@@ -44,7 +43,7 @@
   <scm>
     <connection>scm:git:git://github.com/exo-addons/smart-activity-stream.git</connection>
     <developerConnection>scm:git:git@github.com:exo-addons/smart-activity-stream.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>1.0.0-M08</tag>
     <url>https://github.com/exo-addons/smart-activity-stream</url>
   </scm>
 
