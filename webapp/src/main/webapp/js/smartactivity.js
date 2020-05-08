@@ -987,7 +987,8 @@
         + irrelevantText + '"><span class="relevance relevance-default"></span>&nbsp;&nbsp;&nbsp;</a></li>';
   }
 
-  $document.ready(function() {
+  /* XXX: relevance buttons are disabled
+    $document.ready(function() {
     // Social stream portlet for activities relevance & tracking 
     let $streamPortlet;
     // Searching for observation target
@@ -1022,7 +1023,7 @@
         subtree : true
       });
     }
-  });
+  }); */
   
   return {
     init : function(context) {
