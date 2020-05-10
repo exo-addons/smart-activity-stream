@@ -57,8 +57,8 @@
     <!-- **************************************** -->
     <!-- Dependencies versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.depmgt.version>17.0-M04</org.exoplatform.depmgt.version>
-    <org.exoplatform.platform.version>6.0.0-M04</org.exoplatform.platform.version>
+    <org.exoplatform.depmgt.version>17.0-M31</org.exoplatform.depmgt.version>
+    <org.exoplatform.platform.version>6.0.0-M31</org.exoplatform.platform.version>
     <!-- for tests -->
     <junit.version>4.12</junit.version>
     <mockito.version>2.0.13-beta</mockito.version>
@@ -76,8 +76,29 @@
       </dependency>
       <!-- Import versions from platform project -->
       <dependency>
-        <groupId>org.exoplatform.platform</groupId>
-        <artifactId>platform</artifactId>
+        <groupId>org.exoplatform.jcr</groupId>
+        <artifactId>jcr-parent</artifactId>
+        <version>${org.exoplatform.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.commons</groupId>
+        <artifactId>commons</artifactId>
+        <version>${org.exoplatform.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.ecms</groupId>
+        <artifactId>ecms</artifactId>
+        <version>${org.exoplatform.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.social</groupId>
+        <artifactId>social</artifactId>
         <version>${org.exoplatform.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
