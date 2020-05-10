@@ -495,11 +495,23 @@
   function viewTop() {
     let top = $window.scrollTop();
     // exclude toolbars
-    let toolbarHeight = $("#UIToolbarContainer").outerHeight();
+    let toolbarHeight;
+    if (eXo.env.portal.portalName === "dw") {
+      toolbarHeight = $("#UITopBarContainerParent").outerHeight();
+    } else {
+      toolbarHeight = $("#UIToolbarContainer").outerHeight();
+    }
     if (toolbarHeight) {
       top += toolbarHeight;
     }
-    let spaceMenuHeight = $("#UISpaceMenu").outerHeight();
+    let spaceMenuHeight;
+    if (eXo.env.portal.portalName === "dw") {
+      // DW Menu not fixed, thus we cannot count it here
+      //spaceMenuHeight = $("#SpacePage #Menu").outerHeight();
+      spaceMenuHeight = 0;
+    } else {
+      spaceMenuHeight = $("#UISpaceMenu").outerHeight();
+    }
     if (spaceMenuHeight) {
       top += spaceMenuHeight;
     }
